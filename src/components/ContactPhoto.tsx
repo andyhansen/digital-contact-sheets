@@ -6,10 +6,9 @@ type props = {
 }
 
 const ContactPhoto: FC<props> = ({ photo = new Photo() }) => {
-  if (!photo) photo = new Photo()
-
   return (
     <div className="ContactPhoto">
+      <img src={photo.image.src} width={photo.width} height={photo.height} />
     </div>
   );
 }

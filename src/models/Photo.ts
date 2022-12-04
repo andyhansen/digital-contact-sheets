@@ -3,12 +3,12 @@ import Edge from "./Edge";
 class Photo {
   width: number;
   height: number;
-  photo: HTMLImageElement;
+  image: HTMLImageElement;
 
   constructor(width: number = 6000, height: number = 4000) {
     this.width = width;
     this.height = height;
-    this.photo = new Image(this.width, this.height);
+    this.image = new Image(this.width, this.height);
   }
 
   aspectRatio() {
