@@ -1,6 +1,6 @@
 import Edge from "./Edge";
 
-class ContactPhoto {
+class Photo {
   width: number;
   height: number;
   photo: HTMLImageElement;
@@ -8,7 +8,7 @@ class ContactPhoto {
   constructor(width: number = 6000, height: number = 4000) {
     this.width = width;
     this.height = height;
-    this.photo = new Image(this.width, this.height)
+    this.photo = new Image(this.width, this.height);
   }
 
   aspectRatio() {
@@ -22,4 +22,4 @@ class ContactPhoto {
   }
 }
 
-export default ContactPhoto;
+export default Photo;
